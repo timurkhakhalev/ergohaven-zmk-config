@@ -61,8 +61,7 @@
         win_mode: win_mode {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&bt BT_SEL 0>, <&macro_press>, <&to 0>;
-
+            bindings = <&bt BT_SEL 0 &to 0>;
             label = "WIN_MODE";
         };
 
