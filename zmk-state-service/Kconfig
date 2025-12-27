@@ -3,3 +3,4 @@ config ZMK_STATE_SERVICE
     default n
     depends on BT
     depends on ZMK_BLE
+    depends on !ZMK_SPLIT || ZMK_SPLIT_ROLE_CENTRAL
