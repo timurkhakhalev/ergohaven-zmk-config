@@ -1,0 +1,4 @@
+name: zmk-state-service
+build:
+  cmake: .
+  kconfig: Kconfig

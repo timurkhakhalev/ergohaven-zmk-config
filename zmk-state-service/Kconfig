@@ -1,0 +1,5 @@
+config ZMK_STATE_SERVICE
+    bool "Enable ZMK State Service for exposing layer and BT profile over BLE"
+    default n
+    depends on BT
+    depends on ZMK_BLE

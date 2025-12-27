@@ -1,0 +1,5 @@
+if(CONFIG_ZMK_STATE_SERVICE)
+    zephyr_library_named(zmk_state_service)
+    zephyr_library_sources(src/state_service.c)
+    zephyr_library_include_directories(${ZMK_APP_DIR}/include)
+endif()

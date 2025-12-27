@@ -9,3 +9,4 @@ manifest:
       import: config/west.yml
   self:
     path: config
+    import: ../zmk-state-service
