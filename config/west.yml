@@ -7,7 +7,5 @@ manifest:
       remote: ergohaven
       revision: main
       import: config/west.yml
-    - name: zmk-state-service
-      path: zmk-state-service
   self:
     path: config

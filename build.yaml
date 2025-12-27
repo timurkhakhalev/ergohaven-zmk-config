@@ -3,15 +3,15 @@ include:
   - board: ergohaven
     shield: k03_left
     snippet: studio-rpc-usb-uart
-    cmake-args: -DCONFIG_ZMK_STUDIO=y
+    cmake-args: -DCONFIG_ZMK_STUDIO=y -DZMK_EXTRA_MODULES="/__w/ergohaven-zmk-config/ergohaven-zmk-config/zmk-state-service"
   - board: ergohaven
     shield: k03_left
     keymap: k03_ruen
     snippet: studio-rpc-usb-uart
-    cmake-args: -DCONFIG_ZMK_STUDIO=y
+    cmake-args: -DCONFIG_ZMK_STUDIO=y -DZMK_EXTRA_MODULES="/__w/ergohaven-zmk-config/ergohaven-zmk-config/zmk-state-service"
     artifact-name: k03_left_ruen-ergohaven-zmk
   - board: ergohaven
     shield: k03_right
-
+    cmake-args: -DZMK_EXTRA_MODULES="/__w/ergohaven-zmk-config/ergohaven-zmk-config/zmk-state-service"
   - board: ergohaven
     shield: settings_reset
