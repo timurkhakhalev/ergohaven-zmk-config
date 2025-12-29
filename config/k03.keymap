@@ -147,7 +147,7 @@
 &msc SCRL_DOWN  &kp LG(LEFT_ARROW)  &kp UP               &kp LG(RIGHT_ARROW)  &kp DEL    &kp PAGE_UP                      &kp PG_UP        &kp N7  &kp N8   &kp N9   &trans   &trans
 &msc SCRL_UP    &kp LEFT_ARROW      &kp DOWN_ARROW       &kp RIGHT_ARROW      &kp ENTER  &kp PAGE_DOWN                    &kp PG_DN        &kp N4  &kp N5   &kp N6   &trans   &trans
 &trans          &kp LA(LEFT_ARROW)  &kp LA(RIGHT_ARROW)  &kp LA(RIGHT_ARROW)  &mkp MB4   &mkp MB5       &trans    &trans  &kp PRINTSCREEN  &kp N1  &kp N2   &kp N3   &trans   &trans
-                                    &trans               &trans               &trans     &trans         &trans    &trans  &mo 6            &trans  &kp N0   &trans
+                                    &kp GLOBE            &trans               &trans     &trans         &trans    &trans  &mo 6            &trans  &kp N0   &trans
             >;
         };
 
