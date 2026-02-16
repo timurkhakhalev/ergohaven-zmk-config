@@ -41,6 +41,15 @@
             #binding-cells = <0>;
             bindings = <&kp LG(C)>, <&kp LG(V)>;
         };
+
+        del_backsp: del_backsp {
+            compatible = "zmk,behavior-mod-morph";
+            label = "DEL_BACKSP";
+            bindings = <&kp DELETE>, <&kp BACKSPACE>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
     };
 
     macros {
@@ -99,11 +108,11 @@
 
         nav {
             bindings = <
-&trans          &kp F1              &kp F2               &kp F3               &kp F4     &kp F5                           &kp F6           &kp F9  &kp F10  &kp F11  &kp F12  &trans
-&msc SCRL_UP    &kp HOME            &kp UP               &kp END              &kp DEL    &kp PAGE_UP                      &kp PG_UP        &kp N7  &kp N8   &kp N9   &trans   &trans
-&msc SCRL_DOWN  &kp LEFT_ARROW      &kp DOWN_ARROW       &kp RIGHT_ARROW      &kp ENTER  &kp PAGE_DOWN                    &kp PG_DN        &kp N4  &kp N5   &kp N6   &trans   &trans
-&trans          &kp LC(LEFT_ARROW)  &kp LA(RIGHT_ARROW)  &kp LC(RIGHT_ARROW)  &mkp MB4   &mkp MB5       &trans    &trans  &kp PRINTSCREEN  &kp N1  &kp N2   &kp N3   &trans   &trans
-                                    &trans               &trans               &trans     &trans         &trans    &trans  &mo 6            &trans  &kp N0   &trans
+&trans          &kp F1              &kp F2               &kp F3               &kp F4       &kp F5                           &kp F6           &kp F9  &kp F10  &kp F11  &kp F12  &trans
+&msc SCRL_UP    &kp HOME            &kp UP               &kp END              &del_backsp  &kp PAGE_UP                      &kp PG_UP        &kp N7  &kp N8   &kp N9   &trans   &trans
+&msc SCRL_DOWN  &kp LEFT_ARROW      &kp DOWN_ARROW       &kp RIGHT_ARROW      &kp ENTER    &kp PAGE_DOWN                    &kp PG_DN        &kp N4  &kp N5   &kp N6   &trans   &trans
+&trans          &kp LC(LEFT_ARROW)  &kp LA(RIGHT_ARROW)  &kp LC(RIGHT_ARROW)  &mkp MB4     &mkp MB5       &trans    &trans  &kp PRINTSCREEN  &kp N1  &kp N2   &kp N3   &trans   &trans
+                                    &trans               &trans               &trans       &trans         &trans    &trans  &mo 6            &trans  &kp N0   &trans
             >;
 
             display-name = "Nav";
@@ -143,11 +152,11 @@
         nav_macos {
             display-name = "Nav";
             bindings = <
-&trans          &kp F1              &kp F2               &kp F3               &kp F4     &kp F5                           &kp F6           &kp F9  &kp F10  &kp F11  &kp F12  &trans
-&msc SCRL_DOWN  &kp LG(LEFT_ARROW)  &kp UP               &kp LG(RIGHT_ARROW)  &kp DEL    &kp PAGE_UP                      &kp PG_UP        &kp N7  &kp N8   &kp N9   &trans   &trans
-&msc SCRL_UP    &kp LEFT_ARROW      &kp DOWN_ARROW       &kp RIGHT_ARROW      &kp ENTER  &kp PAGE_DOWN                    &kp PG_DN        &kp N4  &kp N5   &kp N6   &trans   &trans
-&trans          &kp LA(LEFT_ARROW)  &kp LA(RIGHT_ARROW)  &kp LA(RIGHT_ARROW)  &mkp MB4   &mkp MB5       &trans    &trans  &kp PRINTSCREEN  &kp N1  &kp N2   &kp N3   &trans   &trans
-                                    &kp GLOBE            &trans               &trans     &trans         &trans    &trans  &mo 6            &trans  &kp N0   &trans
+&trans          &kp F1              &kp F2               &kp F3               &kp F4       &kp F5                           &kp F6           &kp F9  &kp F10  &kp F11  &kp F12  &trans
+&msc SCRL_DOWN  &kp LG(LEFT_ARROW)  &kp UP               &kp LG(RIGHT_ARROW)  &del_backsp  &kp PAGE_UP                      &kp PG_UP        &kp N7  &kp N8   &kp N9   &trans   &trans
+&msc SCRL_UP    &kp LEFT_ARROW      &kp DOWN_ARROW       &kp RIGHT_ARROW      &kp ENTER    &kp PAGE_DOWN                    &kp PG_DN        &kp N4  &kp N5   &kp N6   &trans   &trans
+&trans          &kp LA(LEFT_ARROW)  &kp LA(RIGHT_ARROW)  &kp LA(RIGHT_ARROW)  &mkp MB4     &mkp MB5       &trans    &trans  &kp PRINTSCREEN  &kp N1  &kp N2   &kp N3   &trans   &trans
+                                    &kp GLOBE            &trans               &trans       &trans         &trans    &trans  &mo 6            &trans  &kp N0   &trans
             >;
         };
 
